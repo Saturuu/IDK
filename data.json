@@ -1,35 +1,36 @@
-[
-    {
-        "title": "Mario",
-        "frame01": "IMGS/Mario/0001.png",
-        "frame02": "IMGS/Mario/0001.png",
-        "frame03": "IMGS/Mario/0001.png",
-        "frame04": "IMGS/Mario/0001.png",
-        "frame05": "IMGS/Mario/0001.png",
-        "frame06": "IMGS/Mario/0001.png",
-        "frame07": "IMGS/Mario/0001.png",
-        "frame08": "IMGS/Mario/0001.png"
+{
+    "0001": {
+      "title": "Mario",
+      "frame01": "IMGS/Mario/0001.png",
+      "frame02": "IMGS/Mario/0001.png",
+      "frame03": "IMGS/Mario/0001.png",
+      "frame04": "IMGS/Mario/0001.png",
+      "frame05": "IMGS/Mario/0001.png",
+      "frame06": "IMGS/Mario/0001.png",
+      "frame07": "IMGS/Mario/0001.png",
+      "frame08": "IMGS/Mario/0001.png"
     },
-    {
-        "title": "Toad",
-        "frame01": "IMGS/Toad/0001.png",
-        "frame02": "IMGS/Toad/0002.png",
-        "frame03": "IMGS/Toad/0003.png",
-        "frame04": "IMGS/Toad/0004.png",
-        "frame05": "IMGS/Toad/0005.png",
-        "frame06": "IMGS/Toad/0006.png",
-        "frame07": "IMGS/Toad/0007.png",
-        "frame08": "IMGS/Toad/0008.png"
+    "0002": {
+      "title": "Toad",
+      "frame01": "IMGS/Toad/0001.png",
+      "frame02": "IMGS/Toad/0002.png",
+      "frame03": "IMGS/Toad/0003.png",
+      "frame04": "IMGS/Toad/0004.png",
+      "frame05": "IMGS/Toad/0005.png",
+      "frame06": "IMGS/Toad/0006.png",
+      "frame07": "IMGS/Toad/0007.png",
+      "frame08": "IMGS/Toad/0008.png"
     },
-    {
-        "title": "Princes",
-        "frame01": "IMGS/Peach/0001.png",
-        "frame02": "IMGS/Peach/0002.png",
-        "frame03": "IMGS/Peach/0003.png",
-        "frame04": "IMGS/Peach/0004.png",
-        "frame05": "IMGS/Peach/0005.png",
-        "frame06": "IMGS/Peach/0006.png",
-        "frame07": "IMGS/Peach/0007.png",
-        "frame08": "IMGS/Peach/0008.png"
+    "0003": {
+      "title": "Princess",
+      "frame01": "IMGS/Peach/0001.png",
+      "frame02": "IMGS/Peach/0002.png",
+      "frame03": "IMGS/Peach/0003.png",
+      "frame04": "IMGS/Peach/0004.png",
+      "frame05": "IMGS/Peach/0005.png",
+      "frame06": "IMGS/Peach/0006.png",
+      "frame07": "IMGS/Peach/0007.png",
+      "frame08": "IMGS/Peach/0008.png"
     }
-]
+}
+  
