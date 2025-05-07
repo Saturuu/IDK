@@ -8,13 +8,24 @@
     <title>Page Title</title>
     <meta charset="UTF-8">
     <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 
 <body>
-    <h1>This is a Heading</h1>
-    <p>This is a paragraph.</p>
-    <img src="IMGS/Peach/0001.png" alt="">
+    <div class="NavBar"><h1 class="MainBarText">This is a Heading</h1></div>
+
+    <div class="ModelContainer">
+        <button id="Left" class="ModelButtons"></button>
+        <img class="ModelImage" src="IMGS/Peach/0001.png" alt="">
+        <button id="Right" class="ModelButtons"></button>
+    </div>
+
+    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+
+    <div class="DownContainer">
+
+    </div>
 </body>
 
 

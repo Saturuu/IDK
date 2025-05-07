@@ -1,0 +1,154 @@
+/*///////////////////*/
+/*/ Global settings /*/
+/*///////////////////*/
+
+* {
+    margin: 0;
+    padding: 0;
+    cursor: url(IMGS/WiiCursors/Normal\ Select.cur), default;
+}
+
+p {
+    cursor: url(IMGS/WiiCursors/Text\ Select.cur), default;
+}
+
+
+
+/*//////////*/
+/*/ Navbar /*/
+/*//////////*/
+
+.NavBar {
+    width: 100%;
+    height: 90px;
+    background-image: linear-gradient(to right,#00779b,#009ac7 10%,#009ac7 80%,#35d0ff );
+    box-shadow: 2px 2px 8px #00000080;
+    border: 0;
+    border-bottom-width: 1px;
+    border-right-width: 1px;
+    border-style: solid;
+    border-color: #41414183;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.MainBarText {
+    margin-inline: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: #ffffff;
+    text-shadow: 3px 3px 4px #00000080;
+    cursor: url(IMGS/WiiCursors/Text\ Select.cur), pointer;
+}
+
+
+
+/*/////////*/
+/*/ Model /*/
+/*/////////*/
+
+.ModelContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.ModelImage {
+    /*// Cursor no hover //*/
+    cursor: url(IMGS/WiiCursors/Help\ Select.cur), default;
+    /*// prevent dragging ghost of image //*/
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+}
+
+/*//////// Buttons on switch ////////*/
+
+.ModelButtons {
+    width: 74px;
+    height: 74px;
+    border-radius: 20px;
+    border-color: #009ac7;
+    border-style: solid;
+    border-width: 5px;
+    box-shadow: 1px 1px 4px #00000080;
+    /*// Cursor no hover //*/
+    cursor: url(IMGS/WiiCursors/Link\ Select.cur), default;
+    transition: all 180ms;
+}
+
+#Left {
+    background: url(IMGS/ButtonLeft.jpg);
+    background-size: cover;
+}
+
+#Right {
+    background: url(IMGS/ButtonRight.jpg);
+    background-size: cover;
+}
+
+.ModelButtons:hover {
+    border-color: #00a6d8;
+}
+
+.ModelButtons:active {
+    box-shadow: 0px 0px 4px #0000008e;
+    border-color: #008ab4;
+}
+
+/*//////// Scrollbar on turn ////////*/
+
+.slider {
+    -webkit-appearance: none;
+    width: 640px;
+    display: block;
+    margin-inline: auto;
+    margin-block: 20px;
+    height: 12px;
+    border-radius: 5px;  
+    background: #8b8b8b;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: 200ms;
+    transition: all 200ms;
+}
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%; 
+    background: #009ac7;
+    cursor: url(IMGS/WiiCursors/Horizontal\ Resize.cur), grab;
+}
+  
+  .slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #009ac7;
+    cursor: url(IMGS/WiiCursors/Horizontal\ Resize.cur), grab;
+}
+
+
+
+/*/////////*/
+/*/ Stats /*/
+/*/////////*/
+
+.DownContainer {
+    width: 100%;
+    height: 800px;
+    margin-top: 60px;
+    background-image: linear-gradient(#8b8b8b, #ffffff 3% , #dddddd 11% , #dddddd 89% , #ffffff 97% , #8b8b8b);
+    border-color: #00b2e9;
+    border-style: solid;
+    border-top-width: 5px;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    border-right-width: 0;
+}
