@@ -8,11 +8,41 @@
     cursor: url(IMGS/WiiCursors/Normal\ Select.cur), default;
 }
 
+/*/ Text /*/
+
 p {
     cursor: url(IMGS/WiiCursors/Text\ Select.cur), default;
 }
 
+/*/ Buttons /*/
 
+button {
+    width: 240px;
+    height: 68px;
+    margin: 10px;
+    border-radius: 64px;
+    border-color: #009ac7;
+    background-image: linear-gradient(#ffffff 45%, #a0a0a0);
+    border-style: solid;
+    border-width: 5px;
+    box-shadow: 1px 1px 4px #00000080;
+    /*// Cursor no hover //*/
+    cursor: url(IMGS/WiiCursors/Link\ Select.cur), default;
+    transition: all 80ms;
+    font-size: 22px;
+}
+
+button:hover {
+    border-color: #00abdf;
+    background-image: linear-gradient(#ffffff 45%, #acacac);
+    transform: scale(1.08);
+}
+
+button:active {
+    border-color: #007da3;
+    background-image: linear-gradient(#dfdfdf 45%, #8b8b8b);
+    transform: scale(0.94);
+}
 
 /*//////////*/
 /*/ Navbar /*/
@@ -61,7 +91,9 @@ p {
     -o-user-drag: none;
 }
 
-/*//////// Buttons on switch ////////*/
+/*/////////////////////*/
+/*/ Buttons on switch /*/
+/*/////////////////////*/
 
 .ModelButtons {
     width: 74px;
@@ -80,49 +112,11 @@ p {
     background-size: cover;
 }
 
+/*////////////*/
+/*/ Info Box /*/
+/*////////////*/
 
-/*//////// Scrollbar on turn ////////*/
-
-.slider {
-    -webkit-appearance: none;
-    width: 640px;
-    display: block;
-    margin-inline: auto;
-    margin-block: 20px;
-    height: 12px;
-    border-radius: 5px;  
-    background: #8b8b8b;
-    outline: none;
-    opacity: 0.7;
-    -webkit-transition: 200ms;
-    transition: all 200ms;
-}
-  
-  .slider::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    appearance: none;
-    width: 25px;
-    height: 25px;
-    border-radius: 50%; 
-    background: #009ac7;
-    cursor: url(IMGS/WiiCursors/Horizontal\ Resize.cur), grab;
-}
-  
-  .slider::-moz-range-thumb {
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    background: #009ac7;
-    cursor: url(IMGS/WiiCursors/Horizontal\ Resize.cur), grab;
-}
-
-
-
-/*/////////*/
-/*/ Stats /*/
-/*/////////*/
-
-.DownContainer {
+.InfoContainer {
     width: 100%;
     height: 800px;
     background-image: linear-gradient(#8b8b8b, #ffffff 3% , #dddddd 11% , #dddddd 89% , #ffffff 97% , #8b8b8b);
@@ -135,37 +129,15 @@ p {
     border-right-width: 0;
 }
 
-.DownContainerButtons {
+.InfoContainerButtons {
 }
 
-/*///////////*/
-/*/ Buttons /*/
-/*///////////*/
+/*////////////*/
+/*/ Down Box /*/
+/*////////////*/
 
-button {
-    width: 240px;
-    height: 68px;
-    margin: 10px;
-    border-radius: 64px;
-    border-color: #009ac7;
-    background-image: linear-gradient(#ffffff 45%, #a0a0a0);
-    border-style: solid;
-    border-width: 5px;
-    box-shadow: 1px 1px 4px #00000080;
-    /*// Cursor no hover //*/
-    cursor: url(IMGS/WiiCursors/Link\ Select.cur), default;
-    transition: all 80ms;
-    font-size: 22px;
-}
-
-button:hover {
-    border-color: #00abdf;
-    background-image: linear-gradient(#ffffff 45%, #acacac);
-    transform: scale(1.08);
-}
-
-button:active {
-    border-color: #007da3;
-    background-image: linear-gradient(#dfdfdf 45%, #8b8b8b);
-    transform: scale(0.9);
+.DownContainer {
+    width: 100%;
+    height: 94px;
+    background-image: linear-gradient(#00779b,#009ac7 10%,#009ac7 80%,#35d0ff );
 }
