@@ -1,4 +1,3 @@
-
 const characters = {
     "0001": {
         title: "Mario",
@@ -23,20 +22,19 @@ const characters = {
             "IMGS/Toad/0007.png",
             "IMGS/Toad/0008.png"]},
     "0003": {
-        title: "Princess",
+        title: "PrincessPeach",
         frames: [
-            "IMGS/Princess/0001.png",
-            "IMGS/Princess/0002.png",
-            "IMGS/Princess/0003.png",
-            "IMGS/Princess/0004.png",
-            "IMGS/Princess/0005.png",
-            "IMGS/Princess/0006.png",
-            "IMGS/Princess/0007.png",
-            "IMGS/Princess/0008.png"]}
+            "IMGS/Peach/0001.png",
+            "IMGS/Peach/0002.png",
+            "IMGS/Peach/0003.png",
+            "IMGS/Peach/0004.png",
+            "IMGS/Peach/0005.png",
+            "IMGS/Peach/0006.png",
+            "IMGS/Peach/0007.png",
+            "IMGS/Peach/0008.png"]}
 };
 
 let frame = 0;
-
 
 function ChangeImageTo(x) {
     const img = document.querySelector(".ModelImage");
@@ -46,9 +44,13 @@ function ChangeImageTo(x) {
         } else {
             frame++;
         }
-        img.src = characters["0002"].frames[frame]
-        console.log(frame)
     } else {
-        img.src = "IMGS/Toad/0002.png"
+        if (frame == 0) {
+            frame = 7;
+        } else {
+            frame--;
+        }
     }
-}
+    img.src = characters["0002"].frames[frame];
+    console.log(frame);
+};
