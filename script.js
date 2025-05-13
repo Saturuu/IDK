@@ -34,3 +34,21 @@ const characters = {
             "IMGS/Princess/0007.png",
             "IMGS/Princess/0008.png"]}
 };
+
+let frame = 0;
+
+
+function ChangeImageTo(x) {
+    const img = document.querySelector(".ModelImage");
+    if (x == "Left") {
+        if (frame == 7) {
+            frame = 0;
+        } else {
+            frame++;
+        }
+        img.src = characters["0002"].frames[frame]
+        console.log(frame)
+    } else {
+        img.src = "IMGS/Toad/0002.png"
+    }
+}
