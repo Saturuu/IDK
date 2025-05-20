@@ -34,7 +34,14 @@ const characters = {
             "IMGS/Peach/0008.png"]}
 };
 
+
+const queryString = window.location.search;
+const urlParams = new URLSearchParams(queryString);
+const id = urlParams.get('id');
+console.log(id);
+
 let frame = 0;
+
 
 function ChangeImageTo(x) {
     const img = document.querySelector(".ModelImage");
@@ -51,6 +58,13 @@ function ChangeImageTo(x) {
             frame--;
         }
     }
-    img.src = characters["0002"].frames[frame];
+    img.src = characters[id].frames[frame];
     console.log(frame);
 };
+
+
+function SetOnStart() {
+    document.querySelector(".ModelImage").src = characters[id].frames[0];
+};
+
+window.onload = SetOnStart;
