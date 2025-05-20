@@ -153,8 +153,10 @@ button:active {
 /*////////*/
 
 .thum {
-    border-radius: 24px;
+    border-radius: 20px;
     border: #8b8b8b;
     border-style: solid;
-
+    border-width: 3px;
+    width: 256px;
+    height: 128px;
 }
