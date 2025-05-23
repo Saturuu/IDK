@@ -22,7 +22,7 @@ const characters = {
             "IMGS/Toad/0007.png",
             "IMGS/Toad/0008.png"]},
     "0003": {
-        title: "PrincessPeach",
+        title: "Princess Peach",
         frames: [
             "IMGS/Peach/0001.png",
             "IMGS/Peach/0002.png",
@@ -65,6 +65,7 @@ function ChangeImageTo(x) {
 
 function SetOnStart() {
     document.querySelector(".ModelImage").src = characters[id].frames[0];
+    document.querySelector(".MainBarText").textContent = characters[id].title;
 };
 
 window.onload = SetOnStart;
