@@ -34,38 +34,55 @@ const characters = {
             "IMGS/Peach/0008.png"]}
 };
 
-
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 const id = urlParams.get('id');
 console.log(id);
 
+let ImageIndex = 0;
+let interval = null;
+
 let frame = 0;
 
 
-function ChangeImageTo(x) {
-    const img = document.querySelector(".ModelImage");
-    if (x == "Left") {
-        if (frame == 7) {
-            frame = 0;
-        } else {
-            frame++;
-        }
-    } else {
-        if (frame == 0) {
-            frame = 7;
-        } else {
-            frame--;
-        }
+function NextImage() {
+    ImageIndex ++;
+    DisplayImage(ImageIndex);
+};
+
+function PrevImage() {
+    ImageIndex --;
+    DisplayImage(ImageIndex);
+};
+
+function DisplayImage(index) {
+    const Images = document.querySelectorAll(".ModelImage");
+
+    if (index >= Images.length) {
+        ImageIndex = 0;
+    }else if(index < 0) {
+        ImageIndex = Images.length - 1;
     }
-    img.src = characters[id].frames[frame];
-    console.log(frame);
+
+    Images.forEach(image => {
+        image.classList.remove("VisibleImage");
+    });
+    Images[ImageIndex].classList.add("VisibleImage");
 };
 
 
 function SetOnStart() {
-    document.querySelector(".ModelImage").src = characters[id].frames[0];
     document.querySelector(".MainBarText").textContent = characters[id].title;
+
+    characters[id].frames.forEach((index) => {
+        const newElement = document.createElement("img");
+        newElement.id = "SpinPhoto";
+        newElement.className = "ModelImage VisibleImage";
+        newElement.src = index;
+        newElement.alt = index;
+        document.querySelector(".ImageContainer").appendChild(newElement);
+    });
+    DisplayImage();
 };
 
 window.onload = SetOnStart;

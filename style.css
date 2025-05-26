@@ -92,6 +92,12 @@ button:active {
 
     width: 720px;
     height: 720px;
+
+    display: none;
+}
+
+.VisibleImage {
+    display: block;
 }
 
 /*/////////////////////*/
