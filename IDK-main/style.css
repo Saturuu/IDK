@@ -1,0 +1,194 @@
+/*///////////////////*/
+/*/ Global settings /*/
+/*///////////////////*/
+
+* {
+    margin: 0;
+    padding: 0;
+    cursor: url(IMGS/WiiCursors/Normal\ Select.cur), default;
+}
+
+body {
+    background-image: repeating-linear-gradient(0deg, #e7e7e7, #e7e7e7 0.25vh, transparent 0.25vh, transparent 0.5vh);
+    background-color: #f2f2f2;
+}
+
+/*/ Text /*/
+
+p {
+    cursor: url(IMGS/WiiCursors/Text\ Select.cur), default;
+}
+
+/*/ Buttons /*/
+
+button {
+    width: 240px;
+    height: 68px;
+    margin: 10px;
+    border-radius: 64px;
+    border-color: #009ac7;
+    background-image: linear-gradient(#ffffff 45%, #a0a0a0);
+    border-style: solid;
+    border-width: 5px;
+    box-shadow: 1px 1px 4px #00000080;
+    /*// Cursor no hover //*/
+    cursor: url(IMGS/WiiCursors/Link\ Select.cur), default;
+    transition: all 80ms;
+    font-size: 22px;
+}
+
+button:hover {
+    border-color: #00abdf;
+    background-image: linear-gradient(#ffffff 45%, #acacac);
+    transform: scale(1.08);
+}
+
+button:active {
+    border-color: #007da3;
+    background-image: linear-gradient(#dfdfdf 45%, #8b8b8b);
+    transform: scale(0.94);
+}
+
+/*//////////*/
+/*/ Navbar /*/
+/*//////////*/
+
+.NavBar {
+    width: 100%;
+    height: 88px;
+    background-image: linear-gradient(#00779b,#009ac7 10%,#009ac7 80%,#35d0ff );
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 81% 100%, 80% 85%, 10% 85%, 9% 100%, 0 100%);
+    box-shadow: 0px 2px 10px #00000080;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.MainBarText {
+    margin-inline: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: #ffffff;
+    text-shadow: 3px 3px 4px #00000080;
+    cursor: url(IMGS/WiiCursors/Text\ Select.cur), pointer;
+}
+
+
+
+/*/////////*/
+/*/ Model /*/
+/*/////////*/
+
+.ModelContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.ModelImage {
+    /*// Cursor no hover //*/
+    cursor: url(IMGS/WiiCursors/Help\ Select.cur), default;
+    /*// prevent dragging ghost of image //*/
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+
+    width: 720px;
+    height: 720px;
+
+    display: none;
+}
+
+.VisibleImage {
+    display: block;
+}
+
+/*/////////////////////*/
+/*/ Buttons on switch /*/
+/*/////////////////////*/
+
+.ModelButtons {
+    width: 74px;
+    height: 74px;
+    border-radius: 20px;
+    margin: 0px;
+}
+
+#Left {
+    background: url(IMGS/ButtonLeft.jpg);
+    background-size: cover;
+}
+
+#Right {
+    background: url(IMGS/ButtonRight.jpg);
+    background-size: cover;
+}
+
+/*////////////*/
+/*/ Info Box /*/
+/*////////////*/
+
+.InfoContainer {
+    width: auto;
+    height: 800px;
+    background-image: linear-gradient(#8b8b8b, #ffffff 3% , #dddddd 11% , #dddddd 89% , #ffffff 97% , #8b8b8b);
+    box-shadow: 0px 0px 4px #00000080;
+    border-color: #00b2e9;
+    border-style: solid;
+    border-top-width: 5px;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    border-right-width: 0;
+    padding-inline: 80px;
+}
+
+.InfoContainerButtons {
+    display: flex;
+    justify-content: center;
+}
+
+/*////////////*/
+/*/ Down Box /*/
+/*////////////*/
+
+.DownContainer {
+    width: 100%;
+    height: 94px;
+    background-image: linear-gradient(#00779b,#009ac7 10%,#009ac7 80%,#35d0ff );
+}
+
+/*////////*/
+/*/ Thum /*/
+/*////////*/
+
+.thum {
+    border-radius: 20px;
+    border: #8b8b8b;
+    background: linear-gradient(0deg, #dfdfdf 0%, #fefefe 100%);
+    box-shadow: 2px 2px 18.5px 0 #0000004f;
+    border-style: solid;
+    border-width: 4px;
+    width: 256px;
+    height: 144px;
+    margin: 12px;
+    object-fit: cover;
+    transition: all 300ms;
+}
+
+.thum:hover {
+    transform: scale(1.04);
+    border-radius: 20px;
+    border: #35d0ff;
+    border-style: solid;
+    border-width: 4px;
+}
+
+.ModelContent {
+    margin-block: 24px;
+    margin-inline: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
