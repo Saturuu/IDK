@@ -9,7 +9,7 @@
 }
 
 body {
-    background-image: repeating-linear-gradient(0deg, #e7e7e7, #e7e7e7 0.25vh, transparent 0.25vh, transparent 0.5vh);
+    background-image: repeating-linear-gradient(0deg, transparent, transparent 0.125vh, #e7e7e7 0.125vh, #e7e7e7 0.375vh, transparent 00.375vh, transparent 0.5vh);
     background-color: #f2f2f2;
 }
 
