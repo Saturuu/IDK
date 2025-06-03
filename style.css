@@ -185,10 +185,22 @@ button:active {
     border-width: 4px;
 }
 
-.ModelContent {
+.SelectContent {
     margin-block: 24px;
     margin-inline: 12px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+@media screen and (min-width: 1740px) {
+    .SelectContent {
+        margin-block: 24px;
+        margin-inline: 12px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        justify-self: center;
+        width: 1740px;
+    }
 }
