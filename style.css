@@ -9,7 +9,7 @@
 }
 
 body {
-    background-image: repeating-linear-gradient(0deg, transparent, transparent 0.125vh, #e7e7e7 0.125vh, #e7e7e7 0.375vh, transparent 00.375vh, transparent 0.5vh);
+    background-image: repeating-linear-gradient(0deg, transparent, transparent 0.125%, #e7e7e7 0.125%, #e7e7e7 0.375%, transparent 00.375%, transparent 0.5%);
     background-color: #f2f2f2;
 }
 
@@ -31,7 +31,8 @@ button {
     border-style: solid;
     border-width: 5px;
     box-shadow: 1px 1px 4px #00000080;
-
+    /*// Cursor no hover //*/
+    cursor: url(IMGS/WiiCursors/Link\ Select.cur), default;
     transition: all 80ms;
     font-size: 22px;
 }
@@ -69,7 +70,7 @@ button:active {
     font-weight: 600;
     color: #ffffff;
     text-shadow: 3px 3px 4px #00000080;
-    cursor: url(IMGS/WiiCursors/Handwriting.cur), pointer;
+    cursor: url(IMGS/WiiCursors/Text\ Select.cur), pointer;
 }
 
 
@@ -82,6 +83,7 @@ button:active {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 30px;
 }
 
 .ModelImage {
@@ -172,14 +174,6 @@ button:active {
     height: 144px;
     margin: 12px;
     object-fit: cover;
-
-    cursor: url(IMGS/WiiCursors/Link\ Select.cur), default;
-
-    -webkit-user-drag: none;
-    -khtml-user-drag: none;
-    -moz-user-drag: none;
-    -o-user-drag: none;
-
     transition: all 300ms;
 }
 
@@ -191,22 +185,10 @@ button:active {
     border-width: 4px;
 }
 
-.SelectContent {
+.ModelContent {
     margin-block: 24px;
     margin-inline: 12px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-}
-
-@media screen and (min-width: 1740px) {
-    .SelectContent {
-        margin-block: 24px;
-        margin-inline: 12px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        justify-self: center;
-        width: 1740px;
-    }
 }
